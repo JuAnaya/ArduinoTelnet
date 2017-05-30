@@ -111,7 +111,7 @@ void TelnetClass::parseReceivedText()
 	{
 	case 'd':
 		if (CommunicationProcess())
-			agregarFuncion();
+			executeLogic();
 		break;
 	case 'i':
 		if (CommunicationProcess())
@@ -119,11 +119,11 @@ void TelnetClass::parseReceivedText()
 		break;
 	case 'a':
 		if (CommunicationProcess())
-			agregarFuncion();
+			executeLogic();
 		break;
 	case 'l':
 		if (CommunicationProcess()) {
-			agregarFuncion();
+			executeLogic();
 		}
 		break;
 
@@ -137,7 +137,7 @@ void TelnetClass::parseReceivedText()
 	case 't':
 		if (CommunicationProcess())
 		{
-			agregarFuncion();
+			executeLogic();
 		}
 		break;
 	case 'r':
@@ -233,10 +233,10 @@ void TelnetClass::printHelpMessage()
 
 }
 
-void TelnetClass::agregarFuncion()
+void TelnetClass::executeLogic()
 {
 	client.println("OK");
-	client.println("\n ejecutar funcion agregada.\n");
+	client.println("\n add your logic here.\n");
 }
 
 #pragma endregion

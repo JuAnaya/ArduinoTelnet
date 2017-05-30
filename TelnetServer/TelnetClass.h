@@ -76,7 +76,7 @@ private:
 
 	bool CommunicationProcess();
 	void printInfo();
-	void agregarFuncion();
+	void executeLogic();
 
 };
 
