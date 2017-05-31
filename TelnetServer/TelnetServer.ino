@@ -1,4 +1,4 @@
-// the setup function runs once when you press reset or power the board
+
 #include "TelnetClass.h"
 #include <UIPEthernet.h>
 #include <stdio.h>
